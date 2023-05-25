@@ -1,0 +1,283 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petri Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="script" href="script.js">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="section-one" id="about">
+  <header>
+    <input type="checkbox" id="menyAvPaa">
+    <label id="burger" for="menyAvPaa">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+  <nav id="meny">
+    <ul>
+      <a href="#about">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </ul>
+  </nav>
+</header>
+<main>
+</main>
+        <script>
+              (function() {
+    var menuButton = document.getElementById('menyAvPaa');
+    var menuItems = document.getElementById('meny');
+
+    menuItems.addEventListener('click', function() {
+      menuButton.checked = false;
+    });
+  })();
+          </script>
+
+<style>
+  #burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  </style>
+    </div>
+    <div class="about">
+        <div class="about-image">
+            <img src="https://i.postimg.cc/gJrq1j3F/image-3.png" alt="Hello Image" width="440"/>
+        </div>
+        <div class="about-text">
+            <h1>Hello there!! 👋 I'm Yomarcy</h1>
+            <p>   An enthusiastic front-end developer. Through intensive programs 
+            like Hackwomen in collaboration with hackademy.mx, 
+            I have specialized in the fascinating world of 
+            ReactJS and acquired skills in JavaScript, CSS, 
+            and HTML. Additionally, I participated in the 
+            Latinas CodeCamp, a 4-month bootcamp where I 
+            deepened my knowledge of ReactJS, CSS, HTML, 
+            and JavaScript. I also complemented my education 
+            with the course "Fundamentals of User Experience 
+            Design" from Google on Coursera.
+            </p>
+            <div class="links">
+              <a title="LinkedIn" href="https://www.linkedin.com/in/yomarcy/" width="25px"><img src="https://i.postimg.cc/3wYJKDdv/linkedin.png" alt="LinkedIn" width="30px" position="center"></a>
+              <a title="GitHub" href="https://github.com/soypetricor" width="25px" ><img src="https://i.postimg.cc/52c2RrJp/github.png" alt="GitHub" width="32px" position="center"></a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="section-two">
+    
+    <!-- DIVIDER CODE -->
+    <div class="wave-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="i-love">
+      <div class="i-love-text">
+          <h1>What truly drives me 💓</h1>
+          <p>Is the opportunity to utilize my technical and creative skills in projects 
+            that have a positive impact on society. My professional goal is to find a 
+            company that provides me with the chance to continue learning and growing in my career. 
+            I value a collaborative and diverse work environment where I can tackle exciting challenges 
+            and contribute innovative solutions.
+          </p>
+      </div>
+      <div class="i-love-image">
+        <img src="https://i.postimg.cc/6qGj3c36/image-4.png" alt="Desktop Image" width="600"/>
+    </div>
+  </div>
+</section>
+<section class="section-three" id="projects">
+  <div class="portfolio-image-container">
+    <img src="https://i.postimg.cc/vHXMf7t8/Dise-o-sin-t-tulo-19.png" alt="Portfolio title image"/>
+    <h1 class="image-portfolio-text">Projects</h1>
+  </div>
+  <div class="projects-container">
+    <button id="modal-project-one" class="modal-project-one" onclick="openModal('modal1')">
+      <img src="https://i.postimg.cc/Dz1xbTt9/Dise-o-sin-t-tulo-20.png" alt="Safe Places" width="410"/>
+      <p>Lugares Seguros</p>
+    </button>
+    <button id="modal-project-two" class="modal-project-two" onclick="openModal('modal2')">
+      <img src="https://i.postimg.cc/Dz1xbTt9/Dise-o-sin-t-tulo-20.png" alt="Badger" width="410"/>
+      <p>Badger</p>
+    </button>
+    <button id="modal-project-three" class="modal-project-three" onclick="openModal('modal3')">
+      <img src="https://i.postimg.cc/Dz1xbTt9/Dise-o-sin-t-tulo-20.png" alt="This Site" width="410"/>
+      <p>This Site</p>
+    </button>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <section>
+        <div>
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h1>Lugares Seguros</h1>
+        <div class="divider"></div>
+        <h2>Learning Application Development</h2>
+        </div>
+        </section>
+        <div class="container-one">
+        <div class="image-one">
+          <img class="carousel-image active" src="https://i.postimg.cc/SszJVM2n/image-5.png" alt="Places List" />
+        </div>
+        <div class="text-container-one">
+        <p>Lugares Seguros (Safe Places) was an exciting learning project in which I 
+          participated as a Front-end Developer. During this project, 
+          I had the opportunity to work on various tasks ranging from 
+          design in Figma to implementing functionalities using ReactJS 
+          and the Ant Design style library. Additionally, this project 
+          marked my first introduction to Git and GitHub, fundamental 
+          tools for version control and team collaboration.</p>
+          </div>
+      </div>
+      <div class="container-two">
+        <div class="text-container-two">
+          <p>My main role in the project involved designing and developing the 
+            list of places, the detailed view for each place, and the functionality 
+            to delete places from the Front-end area. For design purposes, I utilized 
+            Figma, a powerful collaborative design tool, to create intuitive and visually 
+            appealing interfaces. Then, by leveraging ReactJS, I was able to translate 
+            those designs into functional and reusable components.</p>
+        </div>
+        <div class="image-two">
+          <img class="carousel-image active" src="https://i.postimg.cc/P5q6RS2C/image-6.png" alt="Places List" />
+        </div>
+      </div>
+      <div class="technology-container">
+      <span class="react">ReactJS</span>
+      <span class="figma">Figma</span>
+      <span class="git">Git</span>
+      <span class="antd">Ant Design</span>
+      <span class="javascript">JavaScript</span>
+      <span class="html">HTML</span>
+    </div>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <section>
+        <div>
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h1>Badger</h1>
+        <div class="divider"></div>
+        <h2>Learning Application Development</h2>
+        </div>
+        </section>
+        <div class="container-one">
+          <div class="image-one">
+            <img class="carousel-image active" src="https://i.postimg.cc/5Nd98Nwt/image-8.png" alt="Places List" />
+          </div>
+          <div class="text-container-one">
+          <p>In Badger, a learning project I'm currently involved in as 
+            a Front-End Developer, I've had the opportunity to apply my 
+            skills in ReactJS, Git, JavaScript, HTML, and CSS. My contribution 
+            has focused on creating an intuitive form for generating new badges, 
+            as well as implementing an interactive preview of each badge. </p>
+            </div>
+        </div>
+        <div class="container-two">
+          <div class="text-container-two">
+            <p>To challenge my CSS knowledge, 
+              I chose not to rely on style libraries 
+              and instead worked directly on the design provided by the client. 
+              Additionally, we made adjustments to the original design in Figma 
+              to enhance the user experience. These achievements have strengthened 
+              my proficiency in these technologies, and I'm excited to include this 
+              project in my portfolio.</p>
+          </div>
+          <div class="image-two">
+            <img class="carousel-image active" src="https://i.postimg.cc/VsbLSb0T/image-9.png" alt="Places List" />
+          </div>
+        </div>
+        <div class="technology-container">
+        <span class="react">ReactJS</span>
+        <span class="figma">Figma</span>
+        <span class="git">Git</span>
+        <span class="antd">CSS</span>
+        <span class="javascript">JavaScript</span>
+        <span class="html">HTML</span>
+      </div>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <section>
+        <div>
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h1>My Portfolio</h1>
+        <div class="divider"></div>
+        <h2>Showcasing Skills and CSS Animation Challenge</h2>
+        </div>
+        </section>
+        <div class="container-one">
+        <div class="image-one">
+          <img class="carousel-image active" src="https://i.postimg.cc/cH5zfm6n/image-10.png" alt="Places List" />
+        </div>
+        <div class="text-container-one">
+        <p>To showcase my work and skills, 
+          I made the decision to create my portfolio using only HTML, 
+          CSS, and a touch of JavaScript. I designed the website layout 
+          in Figma before diving into coding. It was a personal challenge 
+          for me since I aimed to incorporate CSS animations, something I 
+          had never done before. Therefore, my portfolio is not only a display 
+          of my projects but also a testament to my commitment to continuous learning. 
+          I'm proud to have taken on this challenge.</p>
+          </div>
+      </div>
+      <div class="technology-container">
+      <span class="figma">Figma</span>
+      <span class="javascript">JavaScript</span>
+      <span class="html">HTML</span>
+      <span class="antd">CSS</span>
+    </div>
+    </div>
+  </div>
+</div>
+  <script>
+
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+  startImageCarousel();
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+  </script>
+</section>
+<div class="contact">
+<h1>Contact me</h1>
+</div>
+<section class="section-four" id="contact">
+  <div class="i-love">
+    <div class="i-love-image">
+      <img src="https://i.postimg.cc/kGdZg5HV/Dise-o-sin-t-tulo-21.png" alt="Desktop Image" width="400"/>
+  </div>
+  <div class="i-love-text">
+    <p>Thank you for visiting my portfolio. If you're interested in collaborating, have any inquiries, or just want to say hello, feel free to get in touch! I'm eager to hear your ideas and answer any questions you may have.</p>
+  
+    <p>You can reach me through the following channels:</p>
+
+       <a title="WhatsApp" href="https://wa.me/573193646399" width="25px">
+            <img src="https://i.postimg.cc/Vk2n0Zqt/whatsapp.png" alt="WhatsApp" width="30px" position="center">
+            My WhatsApp</a> <br/>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/yomarcy/" width="25px">
+          <img src="https://i.postimg.cc/3wYJKDdv/linkedin.png" alt="LinkedIn" width="30px" position="center">
+          My LinkedIn</a>
+    <p>Or sending me an email to soypetricor@gmail.com</p>
+</div>
+</div>
+</section>
+</body>
+</html>
